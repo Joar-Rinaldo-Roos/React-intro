@@ -1,15 +1,19 @@
-import PropTypes from 'prop-types'
 
 
 const Header = ({ title }) => {
   return (
     <header>
-      <h1>{title}</h1>
+      <h1 style={{ HeadingStyle }}>{title}</h1>
     </header>
   )
 }
 Header.defaultProps = {
-  title: 'DefaultTracker'
+  title: 'Default Tracker'
+}
+const HeadingStyle = {
+  color: 'red',
+  backgroundColor: 'black',
+
 }
 
 // props Header.proptypes
